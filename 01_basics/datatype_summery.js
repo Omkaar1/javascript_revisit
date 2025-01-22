@@ -16,7 +16,7 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 3456543576654356754n
 
@@ -36,4 +36,26 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
+
+//***********************************
+
+// Stack(Primitive), Heap(Non-Primitive)
+// by value
+let mynum = 22
+let anothernum = mynum
+anothernum = 98
+console.log(mynum);
+console.log(anothernum);
+
+// by reference
+let userOne = {
+    email:"user@google.com",
+    upi :"upi11"
+}
+
+let userTwo = userOne
+userTwo.email = "omkar@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
